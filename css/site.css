@@ -1,0 +1,211 @@
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: none;
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--surface-page);
+  border-bottom: var(--border-w) solid var(--border-hairline);
+  transition: background var(--dur-base) var(--ease-out);
+}
+
+.site-nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: var(--space-4) var(--page-margin);
+}
+
+.logotype {
+  display: block;
+  flex: 0 0 auto;
+  height: 27px;
+  width: auto;
+  color: var(--text-primary);
+}
+
+.logotype-dot {
+  fill: var(--accent);
+}
+
+.theme-toggle {
+  width: var(--control-h-md);
+  height: var(--control-h-md);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-pill);
+  border: var(--border-w) solid transparent;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 0;
+  transition: var(--transition-control);
+}
+
+.theme-toggle:hover {
+  border-color: var(--border-strong);
+  background: var(--surface-sunken);
+  color: var(--text-primary);
+}
+
+.theme-toggle svg {
+  display: none;
+  flex: 0 0 auto;
+}
+
+[data-theme="light"] .theme-toggle .icon-moon,
+[data-theme="dark"] .theme-toggle .icon-sun {
+  display: block;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 620px;
+  display: flex;
+  animation: fadeUp var(--dur-reveal) var(--ease-out) both;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: var(--surface-page);
+}
+
+.hero-bg svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-veil {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    color-mix(in oklab, var(--surface-page) 55%, transparent) 0%,
+    color-mix(in oklab, var(--surface-page) 25%, transparent) 50%,
+    color-mix(in oklab, var(--surface-page) 68%, transparent) 100%
+  );
+}
+
+.hero-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: var(--space-8) var(--page-margin) var(--space-7);
+  width: 100%;
+}
+
+.display {
+  font: var(--text-display);
+  letter-spacing: var(--ls-display);
+  text-transform: uppercase;
+  margin: 0;
+  text-indent: -0.04em;
+  max-width: 22ch;
+  color: var(--text-primary);
+}
+
+.lead {
+  font-size: var(--fs-body-lg);
+  line-height: var(--lh-body);
+  font-family: var(--font-body);
+  color: var(--text-secondary);
+  max-width: var(--prose-max);
+  margin: var(--space-5) 0 0;
+}
+
+.section {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: var(--space-9) var(--page-margin);
+  border-top: var(--border-w) solid var(--border-hairline);
+  animation: fadeUp var(--dur-reveal) var(--ease-out) both;
+}
+
+.section-title {
+  font: var(--fw-semibold) var(--fs-title-1) / var(--lh-title) var(--font-display);
+  letter-spacing: var(--ls-title);
+  text-transform: uppercase;
+  margin: 0 0 var(--space-5);
+}
+
+.prose {
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  max-width: var(--prose-max);
+  margin: 0 0 var(--space-4);
+}
+
+.prose:last-child,
+.prose-muted {
+  margin-bottom: 0;
+}
+
+.prose-muted {
+  color: var(--text-secondary);
+}
+
+.contact-lead {
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  font-family: var(--font-body);
+  color: var(--text-secondary);
+  margin: 0 0 var(--space-4);
+}
+
+.contact-mail {
+  display: inline-block;
+  font: var(--fw-medium) var(--fs-body-lg) / var(--lh-body) var(--font-mono);
+  color: var(--text-primary);
+}
+
+.site-footer {
+  padding: var(--space-6) var(--page-margin);
+  border-top: var(--border-w) solid var(--border-hairline);
+  text-align: center;
+}
+
+.site-footer span {
+  display: block;
+  font: var(--text-meta);
+  letter-spacing: var(--ls-meta);
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.site-footer span + span {
+  margin-top: var(--space-1);
+}

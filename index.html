@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>aiwtf — En mand, nul møder, X agenter</title>
+  <meta name="description" content="Solo iværksætter. Hele vejen fra idé til design, kode, deploy og marketing. Anders Dahl Pape, Aarhus.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/site.css">
+  <script>
+    (function () {
+      var t = localStorage.getItem("aiwtf-theme");
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <svg class="logotype" viewBox="0.24 -186.00 594.48 200.88" role="img" aria-label="aiwtf.">
+        <path fill="currentColor" d="M56.40 2.88L56.40 2.88Q41.52 2.88 31.68-2.16Q21.84-7.20 17.04-15.60Q12.24-24 12.24-33.84L12.24-33.84Q12.24-45.36 18.12-53.76Q24-62.16 35.52-66.84Q47.04-71.52 63.84-71.52L63.84-71.52L94.32-71.52Q94.32-81.12 91.68-87.48Q89.04-93.84 83.52-96.96Q78-100.08 69.36-100.08L69.36-100.08Q59.52-100.08 52.56-95.64Q45.60-91.20 43.92-82.08L43.92-82.08L15.60-82.08Q17.04-95.04 24.24-104.28Q31.44-113.52 43.32-118.68Q55.20-123.84 69.36-123.84L69.36-123.84Q86.40-123.84 98.40-117.96Q110.40-112.08 116.76-101.16Q123.12-90.24 123.12-74.88L123.12-74.88L123.12 0L98.64 0L95.76-19.44Q93.36-14.64 89.64-10.56Q85.92-6.48 81.12-3.48Q76.32-0.48 70.20 1.20Q64.08 2.88 56.40 2.88ZM62.88-19.92L62.88-19.92Q69.84-19.92 75.24-22.44Q80.64-24.96 84.60-29.64Q88.56-34.32 90.72-40.08Q92.88-45.84 93.60-52.32L93.60-52.32L93.60-52.80L66.96-52.80Q58.56-52.80 53.04-50.64Q47.52-48.48 45.12-44.76Q42.72-41.04 42.72-36Q42.72-30.96 45.12-27.36Q47.52-23.76 52.08-21.84Q56.64-19.92 62.88-19.92ZM176.64 0L147.84 0L147.84-120.96L176.64-120.96L176.64 0ZM162.24-140.16L162.24-140.16Q154.32-140.16 149.16-145.08Q144-150 144-157.20L144-157.20Q144-164.64 149.16-169.32Q154.32-174 162.24-174L162.24-174Q170.16-174 175.32-169.32Q180.48-164.64 180.48-157.20L180.48-157.20Q180.48-150 175.32-145.08Q170.16-140.16 162.24-140.16ZM256.56 0L226.80 0L191.28-120.96L219.84-120.96L241.92-31.68L266.88-120.96L299.04-120.96L324-31.68L346.32-120.96L374.88-120.96L339.36 0L309.60 0L283.20-92.16L256.56 0ZM461.52 0L440.88 0Q428.64 0 419.64-3.84Q410.64-7.68 405.60-16.56Q400.56-25.44 400.56-40.56L400.56-40.56L400.56-96.72L379.92-96.72L379.92-120.96L400.56-120.96L403.92-152.88L429.36-152.88L429.36-120.96L462.24-120.96L462.24-96.72L429.36-96.72L429.36-40.56Q429.36-31.44 433.32-27.96Q437.28-24.48 446.64-24.48L446.64-24.48L461.52-24.48L461.52 0ZM516.96 0L488.16 0L488.16-96.72L470.88-96.72L470.88-120.96L488.16-120.96L488.16-134.16Q488.16-148.08 492.84-156.60Q497.52-165.12 506.40-168.96Q515.28-172.80 527.52-172.80L527.52-172.80L541.92-172.80L541.92-148.32L531.84-148.32Q523.92-148.32 520.44-145.08Q516.96-141.84 516.96-133.92L516.96-133.92L516.96-120.96L544.32-120.96L544.32-96.72L516.96-96.72L516.96 0Z"/>
+        <path class="logotype-dot" d="M564.72 1.20L564.72 1.20Q556.56 1.20 551.52-3.84Q546.48-8.88 546.48-15.84L546.48-15.84Q546.48-23.28 551.52-28.32Q556.56-33.36 564.72-33.36L564.72-33.36Q572.64-33.36 577.68-28.32Q582.72-23.28 582.72-15.84L582.72-15.84Q582.72-8.88 577.68-3.84Q572.64 1.20 564.72 1.20Z"/>
+      </svg>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Skift tema">
+        <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+        </svg>
+        <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2"/>
+          <path d="M12 20v2"/>
+          <path d="m4.93 4.93 1.41 1.41"/>
+          <path d="m17.66 17.66 1.41 1.41"/>
+          <path d="M2 12h2"/>
+          <path d="M20 12h2"/>
+          <path d="m6.34 17.66-1.41 1.41"/>
+          <path d="m19.07 4.93-1.41 1.41"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <svg viewBox="0 0 1320 620" preserveAspectRatio="xMidYMid slice">
+          <g fill="none" stroke="color-mix(in oklab,var(--text-primary) 22%,transparent)" stroke-width="1">
+            <line x1="180" y1="470" x2="430" y2="190"></line>
+            <line x1="430" y1="190" x2="760" y2="330"></line>
+            <line x1="430" y1="190" x2="620" y2="90"></line>
+            <line x1="760" y1="330" x2="1040" y2="150"></line>
+            <line x1="760" y1="330" x2="980" y2="480"></line>
+            <line x1="180" y1="470" x2="60" y2="230"></line>
+          </g>
+          <g fill="none" stroke="color-mix(in oklab,var(--text-primary) 30%,transparent)" stroke-width="1">
+            <circle cx="180" cy="470" r="5"></circle>
+            <circle cx="620" cy="90" r="4"></circle>
+            <circle cx="760" cy="330" r="5"></circle>
+            <circle cx="1040" cy="150" r="4"></circle>
+            <circle cx="980" cy="480" r="4"></circle>
+            <circle cx="60" cy="230" r="4"></circle>
+          </g>
+          <circle cx="430" cy="190" r="7" fill="var(--yellow-500)"></circle>
+        </svg>
+      </div>
+      <div class="hero-veil" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <h1 class="display">Én mand, nul møder<br>X agenter</h1>
+        <p class="lead">Solo iværksætter. Hele vejen fra idé til design, kode, deploy og marketing ved hjælp af AI.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Baggrund</h2>
+      <p class="prose">Bag aiwtf (ej, hvad fanden) står Anders Dahl Pape, som siden 2003 blandt andet har medstiftet datingsitet singleplus.dk (solgt 2016) og <a href="https://reshopper.com">reshopper.com</a>&nbsp;(stadig medejer).</p>
+      <p class="prose">Årene har budt på landsdækkende tv, kuldsejlede idéer, investeringsrunder, dårlige teams / gode teams, landsdækkende kendt brand, vækstgæld, tæt på konkurs, butikskæde med eget POS, gode og dårlige ansættelser og meget mere.</p>
+      <p class="prose">At lykkes med noget, kræver at man fejler. Og man vil fejle flere gange end man lykkes.</p>
+      <p class="prose prose-muted">Iværksætter for at undgå et rigtigt job. Solo siden sommer 2026.</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Kontakt</h2>
+      <p class="contact-lead">Spørg for satan.</p>
+      <a class="contact-mail" href="mailto:ej@aiwtf.dk">ej@aiwtf.dk</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 aiwtf — Aarhus, DK</span>
+    <span>CVR. 46397207</span>
+  </footer>
+
+  <script src="js/theme.js"></script>
+</body>
+</html>
