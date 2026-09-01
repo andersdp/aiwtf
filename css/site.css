@@ -132,8 +132,21 @@
   text-transform: uppercase;
   margin: 0;
   text-indent: -0.04em;
-  max-width: 22ch;
   color: var(--text-primary);
+}
+
+.display-line {
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .display {
+    font-size: clamp(
+      26px,
+      calc((100vw - 2 * var(--page-margin)) / 10.5),
+      40px
+    );
+  }
 }
 
 .lead {
