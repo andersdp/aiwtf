@@ -77,6 +77,9 @@
     var next = nextCount();
     if (next !== current) {
       var direction = current === null || next > current ? "up" : "down";
+      window.dispatchEvent(
+        new CustomEvent("agent-count", { detail: { from: current, to: next } })
+      );
       swapDigit(next, direction);
       current = next;
     }

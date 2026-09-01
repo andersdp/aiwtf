@@ -102,6 +102,54 @@
   inset: 0;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+}
+
+.hero-man,
+.hero-node {
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: scale(0);
+  opacity: 0;
+  transition:
+    transform var(--dur-agent) var(--ease-out),
+    opacity var(--dur-agent) var(--ease-out);
+}
+
+.hero-node {
+  fill: transparent;
+}
+
+.hero-man.is-on,
+.hero-node.is-on {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.hero-edge {
+  opacity: 0;
+  stroke-dasharray: var(--hero-edge-len, 1);
+  stroke-dashoffset: var(--hero-edge-len, 1);
+  transition:
+    opacity var(--dur-agent) var(--ease-out),
+    stroke-dashoffset var(--dur-agent) var(--ease-out);
+}
+
+.hero-edge.is-on {
+  opacity: 1;
+  stroke-dashoffset: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-man,
+  .hero-node,
+  .hero-edge {
+    transform: none;
+    opacity: 1;
+    stroke-dasharray: none;
+    stroke-dashoffset: 0;
+    transition: none;
+  }
 }
 
 .hero-veil {

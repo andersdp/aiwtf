@@ -49,22 +49,24 @@
       <div class="hero-bg" aria-hidden="true">
         <svg viewBox="0 0 1320 620" preserveAspectRatio="xMidYMid slice">
           <g fill="none" stroke="color-mix(in oklab,var(--text-primary) 22%,transparent)" stroke-width="1">
-            <line x1="180" y1="470" x2="430" y2="190"></line>
-            <line x1="430" y1="190" x2="760" y2="330"></line>
-            <line x1="430" y1="190" x2="620" y2="90"></line>
-            <line x1="760" y1="330" x2="1040" y2="150"></line>
-            <line x1="760" y1="330" x2="980" y2="480"></line>
-            <line x1="180" y1="470" x2="60" y2="230"></line>
+            <line class="hero-edge" data-from="hero-man" data-to="hero-n1" x1="430" y1="190" x2="180" y2="470"></line>
+            <line class="hero-edge" data-from="hero-man" data-to="hero-n3" x1="430" y1="190" x2="760" y2="330"></line>
+            <line class="hero-edge" data-from="hero-man" data-to="hero-n2" x1="430" y1="190" x2="620" y2="90"></line>
+            <line class="hero-edge" data-from="hero-man" data-to="hero-n7" x1="430" y1="190" x2="280" y2="70"></line>
+            <line class="hero-edge" data-from="hero-n3" data-to="hero-n4" x1="760" y1="330" x2="1040" y2="150"></line>
+            <line class="hero-edge" data-from="hero-n3" data-to="hero-n5" x1="760" y1="330" x2="980" y2="480"></line>
+            <line class="hero-edge" data-from="hero-n1" data-to="hero-n6" x1="180" y1="470" x2="60" y2="230"></line>
           </g>
           <g fill="none" stroke="color-mix(in oklab,var(--text-primary) 30%,transparent)" stroke-width="1">
-            <circle cx="180" cy="470" r="5"></circle>
-            <circle cx="620" cy="90" r="4"></circle>
-            <circle cx="760" cy="330" r="5"></circle>
-            <circle cx="1040" cy="150" r="4"></circle>
-            <circle cx="980" cy="480" r="4"></circle>
-            <circle cx="60" cy="230" r="4"></circle>
+            <circle class="hero-node" id="hero-n1" data-parent="hero-man" cx="180" cy="470" r="5"></circle>
+            <circle class="hero-node" id="hero-n2" data-parent="hero-man" cx="620" cy="90" r="4"></circle>
+            <circle class="hero-node" id="hero-n3" data-parent="hero-man" cx="760" cy="330" r="5"></circle>
+            <circle class="hero-node" id="hero-n4" data-parent="hero-n3" cx="1040" cy="150" r="4"></circle>
+            <circle class="hero-node" id="hero-n5" data-parent="hero-n3" cx="980" cy="480" r="4"></circle>
+            <circle class="hero-node" id="hero-n6" data-parent="hero-n1" cx="60" cy="230" r="4"></circle>
+            <circle class="hero-node" id="hero-n7" data-parent="hero-man" cx="280" cy="70" r="4"></circle>
           </g>
-          <circle cx="430" cy="190" r="7" fill="var(--yellow-500)"></circle>
+          <circle class="hero-man" id="hero-man" cx="430" cy="190" r="7" fill="var(--yellow-500)"></circle>
         </svg>
       </div>
       <div class="hero-veil" aria-hidden="true"></div>
@@ -99,6 +101,7 @@
   </footer>
 
   <script src="js/theme.js"></script>
+  <script src="js/hero-graph.js"></script>
   <script src="js/agent-count.js"></script>
 </body>
 </html>
