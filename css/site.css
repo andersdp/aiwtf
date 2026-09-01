@@ -132,8 +132,11 @@
   text-transform: uppercase;
   margin: 0;
   text-indent: -0.04em;
-  max-width: 22ch;
   color: var(--text-primary);
+}
+
+.display-line {
+  white-space: nowrap;
 }
 
 .lead {
