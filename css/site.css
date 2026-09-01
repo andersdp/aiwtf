@@ -67,10 +67,18 @@
   transition: var(--transition-control);
 }
 
-.theme-toggle:hover {
+.theme-toggle:active {
   border-color: var(--border-strong);
   background: var(--surface-sunken);
   color: var(--text-primary);
+}
+
+@media (hover: hover) {
+  .theme-toggle:hover {
+    border-color: var(--border-strong);
+    background: var(--surface-sunken);
+    color: var(--text-primary);
+  }
 }
 
 .theme-toggle svg {
