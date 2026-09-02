@@ -186,8 +186,7 @@
   font: var(--text-display);
   letter-spacing: var(--ls-display);
   text-transform: uppercase;
-  margin: 0;
-  text-indent: -0.06em;
+  margin: 0 0 0 -0.06em;
   color: var(--text-primary);
 }
 
