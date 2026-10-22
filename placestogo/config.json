@@ -3,7 +3,7 @@
   "freePlaceLimit": 15,
   "minimumVersion": "1.0.0",
   "recommendedVersion": "1.0.0",
-  "news": {
+  "_news": {
     "id": "2026-10-weekend1",
     "title": { "da": "Nyt nyt", "en": "News" },
     "body": { "da": "Så er det weeekend 🍻", "en": "Text." },
