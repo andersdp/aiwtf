@@ -2,11 +2,11 @@
   "schema": 1,
   "freePlaceLimit": 15,
   "minimumVersion": "1.0.0",
-  "recommendedVersion": "1.0.1",
+  "recommendedVersion": "1.0.0",
   "news": {
-    "id": "2026-10-weekend",
+    "id": "2026-10-weekend1",
     "title": { "da": "Nyt nyt", "en": "News" },
-    "body": { "da": "Så er det weekend 🍻", "en": "Text." },
+    "body": { "da": "Så er det weeekend 🍻", "en": "Text." },
     "linkTitle": { "da": "", "en": "Read more" },
     "url": "https://aiwtf.dk",
     "expiresAt": "2026-12-01T00:00:00Z"
