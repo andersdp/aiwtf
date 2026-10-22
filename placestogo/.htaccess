@@ -1,0 +1,6 @@
+<IfModule mod_headers.c>
+  <Files "config.json">
+    Header set Content-Type "application/json"
+    Header set Cache-Control "public, max-age=300"
+  </Files>
+</IfModule>

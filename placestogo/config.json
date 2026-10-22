@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "freePlaceLimit": 15,
+  "minimumVersion": "1.0.0",
+  "recommendedVersion": "1.0.0",
+  "news": {
+    "id": "2026-10-launch",
+    "title": { "da": "Nyhed", "en": "News" },
+    "body": { "da": "Tekst om noget nyt i app'en som er helt vildt fedt.", "en": "Text." },
+    "linkTitle": { "da": "Se mere her", "en": "Read more" },
+    "url": "https://aiwtf.dk",
+    "expiresAt": "2026-12-01T00:00:00Z"
+  }
+}
