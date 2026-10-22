@@ -2,7 +2,7 @@
   "schema": 1,
   "freePlaceLimit": 15,
   "minimumVersion": "1.0.0",
-  "recommendedVersion": "1.0.0",
+  "recommendedVersion": "1.0.1",
   "news": {
     "id": "2026-10-weekend",
     "title": { "da": "Nyt nyt", "en": "News" },
