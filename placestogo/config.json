@@ -3,7 +3,7 @@
   "freePlaceLimit": 15,
   "minimumVersion": "1.0.1",
   "recommendedVersion": "1.0.0",
-  "updateInfoURL": "https://aiwtf.dk",
+  "_updateInfoURL": "https://aiwtf.dk",
   "_news": {
     "id": "2026-10-weekend1",
     "title": { "da": "Nyt nyt", "en": "News" },
