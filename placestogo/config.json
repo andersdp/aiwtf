@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "freePlaceLimit": 25,
+  "freePlaceLimit": 50,
   "minimumVersion": "1.0.0",
   "recommendedVersion": "1.0.0",
   "_updateInfoURL": "https://aiwtf.dk",
